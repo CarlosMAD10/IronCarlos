@@ -13,7 +13,7 @@ from scipy.spatial import KDTree
 
 
 #Importing data function:
-def import_dataset(path=r".\Data_Midterm.xls"):
+def import_dataset(path=r"..\Data_Midterm.xls"):
     """
     Input: optionally, the path to the file with the dataset
     Output: returns the dataset with the cleaning functions applied (mostly eliminating outliers)
