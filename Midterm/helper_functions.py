@@ -21,12 +21,12 @@ def import_dataset(path=r".\Data_Midterm.xls"):
 
     df = pd.read_excel(path, engine="xlrd")
     df = df.drop(columns=['id', "date", 'sqft_above'])
-    df = df[df["bedrooms"] <= 8]
+    df = df[df["bedrooms"] <= 6]
     df = df[(df["bathrooms"] < 6) & (df["bathrooms"] >= 1)]
-    df = df[df["sqft_living"] < 5000]
-    df = df[df["sqft_living15"] < 5000]
-    df = df[df["sqft_lot"] < 15000]
-    df = df[df["sqft_lot15"] < 15000]
+    df = df[df["sqft_living"] <= 5000]
+    df = df[df["sqft_living15"] <= 5000]
+    df = df[df["sqft_lot"] <= 15000]
+    df = df[df["sqft_lot15"] <= 15000]
     df.loc[df["view"] != 0, "view"] = 1
     df = df[df["condition"] > 2]
     df.loc[df["sqft_basement"] != 0, "sqft_basement"] = 1
@@ -52,19 +52,19 @@ def rf_model(df, cols=[]):
     X_train, X_test, y_train, y_test = train_test_split(df.drop("price",axis=1), df["price"], random_state=1)
 
     #Creating the regressor with the optimal parameters
-    optimal_params = {'bootstrap': False, 'max_depth': 100, 'max_features': 'sqrt',
-     'min_samples_leaf': 1, 'min_samples_split': 6, 'n_estimators': 250}
+    optimal_params = {'bootstrap': False, 'max_depth': 70, 'max_features': 'sqrt',
+     'min_samples_leaf': 1, 'min_samples_split': 4, 'n_estimators': 300}
     
 
     reg = RandomForestRegressor(bootstrap=False, max_depth=100, max_features="sqrt", min_samples_leaf=1,
-        min_samples_split=6, n_estimators=250)
+        min_samples_split=2, n_estimators=300)
 
     #Fitting the estimator and returning the output
     reg.fit(X_train, y_train)
 
     return reg, X_train, y_train, X_test, y_test
 
-def rf_clustering(df, cols=[], centers = 150):
+def rf_clustering(df, cols=[], centers = 125):
     """
     Function for creating a random forest model, but introducing a new variable: location_price. It is estimated through a clustering process. 
     The model uses the training set to create a function that maps the location of a house to an "average price" calculated for houses sold nearby.
@@ -137,7 +137,7 @@ def rf_clustering(df, cols=[], centers = 150):
      'min_samples_leaf': 1, 'min_samples_split': 6, 'n_estimators': 250}
     
     reg = RandomForestRegressor(bootstrap=False, max_depth=100, max_features="sqrt", min_samples_leaf=1,
-        min_samples_split=6, n_estimators=250)
+        min_samples_split=2, n_estimators=300)
 
     #Fitting the estimator and returning the output
     reg.fit(X_train, y_train)
@@ -161,8 +161,8 @@ def evaluate(model, X_test, y_test, silent=False):
     if not silent:
         print('---Model Performance---')
         print(model)
-        print(X_test.columns)
-        print('\nAverage Absulute Error: {:0.4f} dollars.'.format(np.mean(errors)))
+        #print(X_test.columns)
+        print('\nAverage Absolute Error: {:0.1f} dollars.'.format(np.mean(errors)))
         print('Mean squared error: %.2f' % mean_squared_error(y_test, y_predict, squared=False))
         print('Accuracy = {:0.2f}%.'.format(accuracy))
         # The coefficient of determination: 1 is perfect prediction
