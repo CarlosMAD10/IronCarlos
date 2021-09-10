@@ -104,7 +104,7 @@ Hyperparameters are the settings in the algorithm that can be adjusted to optimi
 
 We must be careful to avoid models that overfit. Therefore, the standard procedure for parameter fine-tuning includes a cross validation system that tries to ensure that our model is not overfitting. We will use the K-fold method, one of the most widely used. 
 
-After running a randomized search for the best parameter combinations, and running a second, more precise search based on that, we arrive at a set of parameters 
+After running a randomized search for the best parameter combinations, and running a second, more precise search based on that (grid search), we arrive at a set of parameters that increases the accuracy of the model in 0.2-0.3%. 
 
 # 6. Final results and conclusion
 
@@ -116,9 +116,9 @@ The model has been iteratively tuned in order to find the maximum possible accur
 We arrive at the following results: 
 - Average Absolute Error: 56168.8 dollars.
 - Mean squared error: 95867.45
-- Accuracy = 88.3%
+- Accuracy = 88.3% - 88.5%
 
 Possible ways to perhaps increase the accuracy of the model:
 1. Continue with the clustering model to see if we can increase accuracy. This would include exploring other algorithms, both for the clustering method and the minimum-distance funtion that assigns a cluster center to each house.
-2. Consult with the clients if they would be willing to reduce the scope of the model, which could lead to an increase in accuracy. This would probably mean limiting the surface or maximum prices of the houses that we feed into our model, and thus reducing its capability of predicting the price of that kind of houses.
+2. Consult with the clients if they would be willing to reduce the scope of the model, which could lead to an increase in accuracy. This would probably mean limiting the surface or maximum prices of the houses that we feed into our model, and thus reducing its capability of predicting the price of that kind of houses. For example, if we eliminate the houses over 2 millions dollars we still have more than 1700 houses, and the accuracy can attain 88.5%.
 3. Localised models: in view of the importance of the geolocation data for the model, possibly the creation of localised models, by neighborhoods or smaller towns than Seattle, would make sense. The clustering system tries to account for this, in a way, but maybe other systems could be devised.

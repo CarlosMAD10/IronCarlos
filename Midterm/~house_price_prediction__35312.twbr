@@ -1,0 +1,1578 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0712.0907                               -->
+<workbook source-build='2021.2.1 (20212.21.0712.0907)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='final_houses_dataset' inline='true' name='federated.0ynjtaf0brjzmh1ch9wb50qje2kl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='final_houses_dataset' name='textscan.1qx37ey1okh95v13qe2zv1n2mx4l'>
+            <connection class='textscan' directory='C:/Users/carlo/Ironhack/data/IronCarlos/Midterm' filename='final_houses_dataset.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1qx37ey1okh95v13qe2zv1n2mx4l' name='final_houses_dataset.csv' table='[final_houses_dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='bedrooms' ordinal='1' />
+            <column datatype='real' name='bathrooms' ordinal='2' />
+            <column datatype='integer' name='sqft_living' ordinal='3' />
+            <column datatype='integer' name='sqft_lot' ordinal='4' />
+            <column datatype='real' name='floors' ordinal='5' />
+            <column datatype='integer' name='waterfront' ordinal='6' />
+            <column datatype='integer' name='view' ordinal='7' />
+            <column datatype='integer' name='condition' ordinal='8' />
+            <column datatype='integer' name='grade' ordinal='9' />
+            <column datatype='integer' name='sqft_basement' ordinal='10' />
+            <column datatype='integer' name='yr_built' ordinal='11' />
+            <column datatype='integer' name='yr_renovated' ordinal='12' />
+            <column datatype='integer' name='zipcode' ordinal='13' />
+            <column datatype='real' name='lat' ordinal='14' />
+            <column datatype='real' name='long' ordinal='15' />
+            <column datatype='integer' name='sqft_living15' ordinal='16' />
+            <column datatype='integer' name='sqft_lot15' ordinal='17' />
+            <column datatype='integer' name='price' ordinal='18' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1qx37ey1okh95v13qe2zv1n2mx4l' name='final_houses_dataset.csv' table='[final_houses_dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='bedrooms' ordinal='1' />
+            <column datatype='real' name='bathrooms' ordinal='2' />
+            <column datatype='integer' name='sqft_living' ordinal='3' />
+            <column datatype='integer' name='sqft_lot' ordinal='4' />
+            <column datatype='real' name='floors' ordinal='5' />
+            <column datatype='integer' name='waterfront' ordinal='6' />
+            <column datatype='integer' name='view' ordinal='7' />
+            <column datatype='integer' name='condition' ordinal='8' />
+            <column datatype='integer' name='grade' ordinal='9' />
+            <column datatype='integer' name='sqft_basement' ordinal='10' />
+            <column datatype='integer' name='yr_built' ordinal='11' />
+            <column datatype='integer' name='yr_renovated' ordinal='12' />
+            <column datatype='integer' name='zipcode' ordinal='13' />
+            <column datatype='real' name='lat' ordinal='14' />
+            <column datatype='real' name='long' ordinal='15' />
+            <column datatype='integer' name='sqft_living15' ordinal='16' />
+            <column datatype='integer' name='sqft_lot15' ordinal='17' />
+            <column datatype='integer' name='price' ordinal='18' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[final_houses_dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[final_houses_dataset.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_houses_dataset.csv_5B6880F9F0A34192B23A041A6BCDB5E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bedrooms</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bedrooms]</local-name>
+            <parent-name>[final_houses_dataset.csv]</parent-name>
+            <remote-alias>bedrooms</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_houses_dataset.csv_5B6880F9F0A34192B23A041A6BCDB5E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bathrooms</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bathrooms]</local-name>
+            <parent-name>[final_houses_dataset.csv]</parent-name>
+            <remote-alias>bathrooms</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_houses_dataset.csv_5B6880F9F0A34192B23A041A6BCDB5E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sqft_living</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sqft_living]</local-name>
+            <parent-name>[final_houses_dataset.csv]</parent-name>
+            <remote-alias>sqft_living</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_houses_dataset.csv_5B6880F9F0A34192B23A041A6BCDB5E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sqft_lot</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sqft_lot]</local-name>
+            <parent-name>[final_houses_dataset.csv]</parent-name>
+            <remote-alias>sqft_lot</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_houses_dataset.csv_5B6880F9F0A34192B23A041A6BCDB5E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>floors</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[floors]</local-name>
+            <parent-name>[final_houses_dataset.csv]</parent-name>
+            <remote-alias>floors</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_houses_dataset.csv_5B6880F9F0A34192B23A041A6BCDB5E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>waterfront</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[waterfront]</local-name>
+            <parent-name>[final_houses_dataset.csv]</parent-name>
+            <remote-alias>waterfront</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_houses_dataset.csv_5B6880F9F0A34192B23A041A6BCDB5E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>view</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[view]</local-name>
+            <parent-name>[final_houses_dataset.csv]</parent-name>
+            <remote-alias>view</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_houses_dataset.csv_5B6880F9F0A34192B23A041A6BCDB5E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>condition</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[condition]</local-name>
+            <parent-name>[final_houses_dataset.csv]</parent-name>
+            <remote-alias>condition</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_houses_dataset.csv_5B6880F9F0A34192B23A041A6BCDB5E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>grade</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[grade]</local-name>
+            <parent-name>[final_houses_dataset.csv]</parent-name>
+            <remote-alias>grade</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_houses_dataset.csv_5B6880F9F0A34192B23A041A6BCDB5E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sqft_basement</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sqft_basement]</local-name>
+            <parent-name>[final_houses_dataset.csv]</parent-name>
+            <remote-alias>sqft_basement</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_houses_dataset.csv_5B6880F9F0A34192B23A041A6BCDB5E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yr_built</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[yr_built]</local-name>
+            <parent-name>[final_houses_dataset.csv]</parent-name>
+            <remote-alias>yr_built</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_houses_dataset.csv_5B6880F9F0A34192B23A041A6BCDB5E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yr_renovated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[yr_renovated]</local-name>
+            <parent-name>[final_houses_dataset.csv]</parent-name>
+            <remote-alias>yr_renovated</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_houses_dataset.csv_5B6880F9F0A34192B23A041A6BCDB5E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zipcode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[zipcode]</local-name>
+            <parent-name>[final_houses_dataset.csv]</parent-name>
+            <remote-alias>zipcode</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_houses_dataset.csv_5B6880F9F0A34192B23A041A6BCDB5E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lat]</local-name>
+            <parent-name>[final_houses_dataset.csv]</parent-name>
+            <remote-alias>lat</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_houses_dataset.csv_5B6880F9F0A34192B23A041A6BCDB5E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>long</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[long]</local-name>
+            <parent-name>[final_houses_dataset.csv]</parent-name>
+            <remote-alias>long</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_houses_dataset.csv_5B6880F9F0A34192B23A041A6BCDB5E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sqft_living15</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sqft_living15]</local-name>
+            <parent-name>[final_houses_dataset.csv]</parent-name>
+            <remote-alias>sqft_living15</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_houses_dataset.csv_5B6880F9F0A34192B23A041A6BCDB5E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sqft_lot15</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sqft_lot15]</local-name>
+            <parent-name>[final_houses_dataset.csv]</parent-name>
+            <remote-alias>sqft_lot15</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_houses_dataset.csv_5B6880F9F0A34192B23A041A6BCDB5E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[final_houses_dataset.csv]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_houses_dataset.csv_5B6880F9F0A34192B23A041A6BCDB5E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Bedrooms (group)]' role='dimension' type='ordinal'>
+        <calculation class='categorical-bin' column='[bedrooms]' new-bin='true' />
+      </column>
+      <column caption='Price (bin)' datatype='integer' name='[Price (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='4' formula='[price]' peg='0' size='75332' />
+      </column>
+      <column datatype='string' name='[Price (group)]' role='dimension' type='ordinal'>
+        <calculation class='categorical-bin' column='[price]' new-bin='true' />
+      </column>
+      <column aggregation='None' caption='Sqft Living (bin)' datatype='integer' name='[Sqft Living (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='2' formula='[sqft_living]' peg='0' size='150' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='final_houses_dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[final_houses_dataset.csv_5B6880F9F0A34192B23A041A6BCDB5E4]' role='measure' type='quantitative' />
+      <column caption='Bathrooms' datatype='real' name='[bathrooms]' role='measure' type='quantitative' />
+      <column caption='Bedrooms' datatype='integer' name='[bedrooms]' role='measure' type='quantitative' />
+      <column caption='Condition' datatype='integer' name='[condition]' role='measure' type='quantitative' />
+      <column caption='Floors' datatype='real' name='[floors]' role='measure' type='quantitative' />
+      <column caption='Grade' datatype='integer' name='[grade]' role='measure' type='ordinal' />
+      <column aggregation='Avg' caption='Lat' datatype='real' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Long' datatype='real' name='[long]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+      <column caption='Sqft Basement' datatype='integer' name='[sqft_basement]' role='measure' type='quantitative' />
+      <column caption='Sqft Living15' datatype='integer' name='[sqft_living15]' role='measure' type='quantitative' />
+      <column caption='Sqft Living' datatype='integer' name='[sqft_living]' role='measure' type='quantitative' />
+      <column caption='Sqft Lot15' datatype='integer' name='[sqft_lot15]' role='measure' type='quantitative' />
+      <column caption='Sqft Lot' datatype='integer' name='[sqft_lot]' role='measure' type='quantitative' />
+      <column caption='View' datatype='integer' name='[view]' role='measure' type='ordinal' />
+      <column caption='Waterfront' datatype='integer' name='[waterfront]' role='measure' type='quantitative' />
+      <column caption='Yr Built' datatype='integer' name='[yr_built]' role='dimension' type='quantitative' />
+      <column caption='Yr Renovated' datatype='integer' name='[yr_renovated]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' caption='Zipcode' datatype='integer' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column-instance column='[bedrooms]' derivation='Attribute' name='[attr:bedrooms:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[bedrooms]' derivation='Avg' name='[avg:bedrooms:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[bedrooms]' derivation='CountD' name='[ctd:bedrooms:ok]' pivot='key' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[avg:bedrooms:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>2.6000000000000001</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>9.0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>2.2000000000000002</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>5.0</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>13.0</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>2.6666666666666665</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>10.0</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>2.25</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>5.5</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>1.0</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>3.6666666666666665</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>4.333333333333333</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>3.5</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>18.0</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>2.3333333333333335</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>6.0</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>7.0</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>3.2000000000000002</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>14.0</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>3.25</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>15.0</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>3.6000000000000001</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>21.0</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>1.5</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>3.75</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2.75</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>11.0</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>2.5</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>8.0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1.6666666666666667</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>3.0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>4.5</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>3.3333333333333335</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>16.0</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>2.7999999999999998</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>12.0</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>2.0</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>4.0</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>4.666666666666667</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:bedrooms:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>18</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>%many-values%</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>15</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>21</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>16</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>4</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[ctd:bedrooms:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>18</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>%many-values%</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>15</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>21</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>16</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>4</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Spain&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='final_houses_dataset.csv' id='final_houses_dataset.csv_5B6880F9F0A34192B23A041A6BCDB5E4'>
+            <properties context=''>
+              <relation connection='textscan.1qx37ey1okh95v13qe2zv1n2mx4l' name='final_houses_dataset.csv' table='[final_houses_dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='bedrooms' ordinal='1' />
+                  <column datatype='real' name='bathrooms' ordinal='2' />
+                  <column datatype='integer' name='sqft_living' ordinal='3' />
+                  <column datatype='integer' name='sqft_lot' ordinal='4' />
+                  <column datatype='real' name='floors' ordinal='5' />
+                  <column datatype='integer' name='waterfront' ordinal='6' />
+                  <column datatype='integer' name='view' ordinal='7' />
+                  <column datatype='integer' name='condition' ordinal='8' />
+                  <column datatype='integer' name='grade' ordinal='9' />
+                  <column datatype='integer' name='sqft_basement' ordinal='10' />
+                  <column datatype='integer' name='yr_built' ordinal='11' />
+                  <column datatype='integer' name='yr_renovated' ordinal='12' />
+                  <column datatype='integer' name='zipcode' ordinal='13' />
+                  <column datatype='real' name='lat' ordinal='14' />
+                  <column datatype='real' name='long' ordinal='15' />
+                  <column datatype='integer' name='sqft_living15' ordinal='16' />
+                  <column datatype='integer' name='sqft_lot15' ordinal='17' />
+                  <column datatype='integer' name='price' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Price per location</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_houses_dataset' name='federated.0ynjtaf0brjzmh1ch9wb50qje2kl' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0ynjtaf0brjzmh1ch9wb50qje2kl'>
+            <column aggregation='Avg' caption='Lat' datatype='real' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Long' datatype='real' name='[long]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[lat]' derivation='None' name='[none:lat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[long]' derivation='None' name='[none:long:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='None' name='[none:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:long:qk]' field-type='quantitative' max='-13553859.18953011' min='-13627741.492711782' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:lat:qk]' field-type='quantitative' max='6063508.4079651712' min='6020295.3650495606' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:price:qk]' palette='blue_teal_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:price:qk]' />
+              <size column='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:price:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:lat:qk]</rows>
+        <cols>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:long:qk]</cols>
+      </table>
+      <simple-id uuid='{EC183F2C-C091-45C2-BDAD-E3F12330082E}' />
+    </worksheet>
+    <worksheet name='Sheet 10'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of houses per price range</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_houses_dataset' name='federated.0ynjtaf0brjzmh1ch9wb50qje2kl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ynjtaf0brjzmh1ch9wb50qje2kl'>
+            <column datatype='integer' name='[F1]' role='measure' type='quantitative' />
+            <column caption='Price (bin)' datatype='integer' name='[Price (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='4' formula='[price]' peg='0' size='75332' />
+            </column>
+            <column-instance column='[F1]' derivation='Count' name='[cnt:F1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Price (bin)]' derivation='None' name='[none:Price (bin):ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[cnt:F1:qk]</rows>
+        <cols>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:Price (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[Price (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{1648CEAC-7A02-41AD-8F2F-9581A2F21157}' />
+    </worksheet>
+    <worksheet name='Sheet 11'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of houses per living space
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_houses_dataset' name='federated.0ynjtaf0brjzmh1ch9wb50qje2kl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ynjtaf0brjzmh1ch9wb50qje2kl'>
+            <column datatype='integer' name='[F1]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Sqft Living (bin)' datatype='integer' name='[Sqft Living (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[sqft_living]' peg='0' size='150' />
+            </column>
+            <column-instance column='[F1]' derivation='Count' name='[cnt:F1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sqft Living (bin)]' derivation='None' name='[none:Sqft Living (bin):ok]' pivot='key' type='ordinal' />
+            <column caption='Sqft Living' datatype='integer' name='[sqft_living]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[cnt:F1:qk]</rows>
+        <cols>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:Sqft Living (bin):ok]</cols>
+      </table>
+      <simple-id uuid='{D9067F73-E916-4F50-8A86-145AC04C8128}' />
+    </worksheet>
+    <worksheet name='Sheet 12'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average price per number of bedrooms</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_houses_dataset' name='federated.0ynjtaf0brjzmh1ch9wb50qje2kl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ynjtaf0brjzmh1ch9wb50qje2kl'>
+            <column datatype='string' name='[Bedrooms (group)]' role='dimension' type='ordinal'>
+              <calculation class='categorical-bin' column='[bedrooms]' new-bin='true' />
+            </column>
+            <column-instance column='[bedrooms]' derivation='Attribute' name='[attr:bedrooms:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Bedrooms' datatype='integer' name='[bedrooms]' role='measure' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[attr:bedrooms:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:price:qk]</rows>
+        <cols>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[Bedrooms (group)]</cols>
+      </table>
+      <simple-id uuid='{067EB21A-A188-406E-A0BC-1CDDE2C36D85}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Older and newer houses&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_houses_dataset' name='federated.0ynjtaf0brjzmh1ch9wb50qje2kl' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0ynjtaf0brjzmh1ch9wb50qje2kl'>
+            <column aggregation='Avg' caption='Lat' datatype='real' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Long' datatype='real' name='[long]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[lat]' derivation='None' name='[none:lat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[long]' derivation='None' name='[none:long:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[yr_built]' derivation='None' name='[none:yr_built:qk]' pivot='key' type='quantitative' />
+            <column caption='Yr Built' datatype='integer' name='[yr_built]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:long:qk]' field-type='quantitative' max='-13538982.039146883' min='-13652864.678910771' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:lat:qk]' field-type='quantitative' max='6056975.2058655657' min='5990366.3538464401' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:yr_built:qk]' palette='orange_blue_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:yr_built:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:lat:qk]</rows>
+        <cols>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:long:qk]</cols>
+      </table>
+      <simple-id uuid='{49081623-C831-4029-9DCF-0C6CE0C6D0FC}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average price per number of floors
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_houses_dataset' name='federated.0ynjtaf0brjzmh1ch9wb50qje2kl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ynjtaf0brjzmh1ch9wb50qje2kl'>
+            <column-instance column='[floors]' derivation='Attribute' name='[attr:floors:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Floors' datatype='real' name='[floors]' role='measure' type='quantitative' />
+            <column-instance column='[floors]' derivation='None' name='[none:floors:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[attr:floors:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:price:qk]</rows>
+        <cols>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:floors:ok]</cols>
+      </table>
+      <simple-id uuid='{18C8A8DD-9C08-4E11-B24E-E40CD454C642}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average price per grade</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_houses_dataset' name='federated.0ynjtaf0brjzmh1ch9wb50qje2kl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ynjtaf0brjzmh1ch9wb50qje2kl'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Grade' datatype='integer' name='[grade]' role='measure' type='ordinal' />
+            <column-instance column='[grade]' derivation='None' name='[none:grade:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:price:qk]</rows>
+        <cols>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:grade:ok]</cols>
+      </table>
+      <simple-id uuid='{612801C3-67DE-40D6-8D28-446CF1B62157}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average price per zipcode&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_houses_dataset' name='federated.0ynjtaf0brjzmh1ch9wb50qje2kl' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0ynjtaf0brjzmh1ch9wb50qje2kl'>
+            <column-instance column='[lat]' derivation='Avg' name='[avg:lat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[long]' derivation='Avg' name='[avg:long:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Lat' datatype='real' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Long' datatype='real' name='[long]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[zipcode]' derivation='None' name='[none:zipcode:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Zipcode' datatype='integer' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:long:qk]' field-type='quantitative' max='-13552263.400312077' min='-13637162.073710356' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:lat:qk]' field-type='quantitative' max='6068330.4259630796' min='6018674.0149005102' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:price:qk]' palette='red_green_diverging_10_0' type='interpolated' />
+            <encoding attr='size' field='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:price:qk]' field-type='quantitative' max-size='1' min-size='0' type='quantsize' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:price:qk]' />
+              <lod column='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:zipcode:ok]' />
+              <geometry column='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='14.547999382019043' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:lat:qk]</rows>
+        <cols>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:long:qk]</cols>
+      </table>
+      <simple-id uuid='{4E2AFE2B-2F29-4706-9E40-B4CC2303350A}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average living space by zipcode</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_houses_dataset' name='federated.0ynjtaf0brjzmh1ch9wb50qje2kl' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0ynjtaf0brjzmh1ch9wb50qje2kl'>
+            <column-instance column='[lat]' derivation='Avg' name='[avg:lat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[long]' derivation='Avg' name='[avg:long:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sqft_living]' derivation='Avg' name='[avg:sqft_living:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[sqft_living]' derivation='Avg' name='[avg:sqft_living:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Lat' datatype='real' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Long' datatype='real' name='[long]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[zipcode]' derivation='None' name='[none:zipcode:ok]' pivot='key' type='ordinal' />
+            <column caption='Sqft Living' datatype='integer' name='[sqft_living]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Zipcode' datatype='integer' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:long:qk]' field-type='quantitative' max='-13522074.536440335' min='-13645770.889394615' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:lat:qk]' field-type='quantitative' max='6072537.6419547582' min='6000188.8442247463' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:sqft_living:qk]' />
+              <size column='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:sqft_living:ok]' />
+              <lod column='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:zipcode:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:lat:qk]</rows>
+        <cols>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:long:qk]</cols>
+      </table>
+      <simple-id uuid='{004118FC-B1E5-46AF-B210-14A8B93A3433}' />
+    </worksheet>
+    <worksheet name='Sheet 6 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of houses with a view by zipcode</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_houses_dataset' name='federated.0ynjtaf0brjzmh1ch9wb50qje2kl' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0ynjtaf0brjzmh1ch9wb50qje2kl'>
+            <column-instance column='[lat]' derivation='Avg' name='[avg:lat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[long]' derivation='Avg' name='[avg:long:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Lat' datatype='real' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Long' datatype='real' name='[long]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[zipcode]' derivation='None' name='[none:zipcode:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[view]' derivation='Sum' name='[sum:view:ok]' pivot='key' type='ordinal' />
+            <column caption='View' datatype='integer' name='[view]' role='measure' type='ordinal' />
+            <column aggregation='Sum' caption='Zipcode' datatype='integer' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:long:qk]' field-type='quantitative' max='-13545485.214407157' min='-13646668.897498716' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:lat:qk]' field-type='quantitative' max='6075519.459566447' min='6016338.1042012274' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[sum:view:ok]' />
+              <lod column='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:zipcode:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:lat:qk]</rows>
+        <cols>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:long:qk]</cols>
+        <show-full-range>
+          <column>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[Price (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{E52AF432-83B9-4C99-8C60-C312B99DDAEA}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of houses sold per zipcode
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_houses_dataset' name='federated.0ynjtaf0brjzmh1ch9wb50qje2kl' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0ynjtaf0brjzmh1ch9wb50qje2kl'>
+            <column datatype='integer' name='[F1]' role='measure' type='quantitative' />
+            <column-instance column='[lat]' derivation='Avg' name='[avg:lat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[long]' derivation='Avg' name='[avg:long:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F1]' derivation='Count' name='[cnt:F1:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Lat' datatype='real' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Long' datatype='real' name='[long]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[zipcode]' derivation='None' name='[none:zipcode:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' caption='Zipcode' datatype='integer' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:long:qk]' field-type='quantitative' max='-13545276.600926714' min='-13648917.858251143' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:lat:qk]' field-type='quantitative' max='6069073.3340744879' min='6008454.5673641991' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:zipcode:ok]' />
+              <size column='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[cnt:F1:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:lat:qk]</rows>
+        <cols>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:long:qk]</cols>
+      </table>
+      <simple-id uuid='{F14968EB-F522-464F-AD56-E9CA314F9A9C}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of houses with waterfront by zipcode
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_houses_dataset' name='federated.0ynjtaf0brjzmh1ch9wb50qje2kl' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0ynjtaf0brjzmh1ch9wb50qje2kl'>
+            <column-instance column='[lat]' derivation='Avg' name='[avg:lat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[long]' derivation='Avg' name='[avg:long:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Lat' datatype='real' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Long' datatype='real' name='[long]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[zipcode]' derivation='None' name='[none:zipcode:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[waterfront]' derivation='Sum' name='[sum:waterfront:qk]' pivot='key' type='quantitative' />
+            <column caption='Waterfront' datatype='integer' name='[waterfront]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Zipcode' datatype='integer' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:long:qk]' field-type='quantitative' max='-13567996.968978895' min='-13632350.034895752' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:lat:qk]' field-type='quantitative' max='6054425.3976379521' min='6016785.9132220643' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[sum:waterfront:qk]' />
+              <lod column='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:zipcode:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:lat:qk]</rows>
+        <cols>[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:long:qk]</cols>
+      </table>
+      <simple-id uuid='{67E70E39-CCEF-47D6-A44A-4D0B271AD8F8}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='8' param='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:price:qk]' type='color' />
+            <card pane-specification-id='8' param='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:price:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{75DAFE69-08A0-43E2-8102-E0667D64CC3F}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[none:yr_built:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{DBF023B2-C3D9-4DC9-8EB5-17AFA4A9A565}' />
+    </window>
+    <window class='worksheet' name='Sheet 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1A09CC28-3832-47C3-A46F-70820817F1CA}' />
+    </window>
+    <window class='worksheet' name='Sheet 11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{135B2E1B-765F-464A-B81C-FBD66CA7C59F}' />
+    </window>
+    <window class='worksheet' name='Sheet 12'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{05828D65-863B-4AE3-8B3B-48F14BDE28B9}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B7CE59CE-9E5B-427D-996E-553A280DB339}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4366AB96-7D78-4DAE-BFA6-F42B6E1BAE83}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[cnt:F1:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{271215E8-E393-4FD1-A672-E391790E4760}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:price:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{2FD16DE5-5BA6-4383-8CC0-28D872C4A191}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:sqft_living:ok]' type='size' />
+            <card pane-specification-id='0' param='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[avg:sqft_living:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{FD48D14B-1423-452E-B77E-4F729F7DFC57}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[sum:waterfront:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{D4BE9D65-1BCD-4494-9D41-9A100F3D6D6C}' />
+    </window>
+    <window class='worksheet' name='Sheet 6 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ynjtaf0brjzmh1ch9wb50qje2kl].[sum:view:ok]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{874B91A7-068F-4BD1-8D32-170068F72578}' />
+    </window>
+  </windows>
+</workbook>

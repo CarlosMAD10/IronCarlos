@@ -31,7 +31,7 @@ def import_dataset(path=r".\Data_Midterm.xls"):
     df = df[df["condition"] > 2]
     df.loc[df["sqft_basement"] != 0, "sqft_basement"] = 1
     df.loc[(df["yr_renovated"]!=0)&(df["yr_renovated"]<2000), "yr_renovated"] = 1
-    df.loc[df["yr_renovated"]>=1980, "yr_renovated"] = 2
+    df.loc[df["yr_renovated"]>=2000, "yr_renovated"] = 2
     
   
     return df
